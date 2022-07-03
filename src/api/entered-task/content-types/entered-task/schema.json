@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entered_tasks",
+  "info": {
+    "singularName": "entered-task",
+    "pluralName": "entered-tasks",
+    "displayName": "entered_task",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "post_link": {
+      "type": "string",
+      "unique": true
+    },
+    "price_per_task": {
+      "type": "integer",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "comment": {
+      "type": "richtext"
+    },
+    "task_ref": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    }
+  }
+}

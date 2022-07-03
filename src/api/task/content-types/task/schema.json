@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "singularName": "task",
+    "pluralName": "tasks",
+    "displayName": "task",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "budget": {
+      "type": "integer",
+      "min": 300,
+      "required": true
+    },
+    "price_per_task": {
+      "type": "integer",
+      "min": 30,
+      "required": true
+    },
+    "no_of_post": {
+      "type": "integer",
+      "required": true
+    },
+    "min_followers": {
+      "type": "integer"
+    },
+    "service_charge": {
+      "type": "integer",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "featured_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "downloadable": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "task_ref": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
